@@ -46,7 +46,6 @@
             android:max="100"
             android:progress="0"
             style="@android:style/Widget.ProgressBar.Horizontal"
-            android:progressDrawable="@drawable/custom_progress_bar"
             android:minHeight="20dp"/>
 
         <!-- Contador de X -->
@@ -88,7 +87,6 @@
             android:max="100"
             android:progress="0"
             style="@android:style/Widget.ProgressBar.Horizontal"
-            android:progressDrawable="@drawable/custom_progress_bar"
             android:minHeight="20dp"/>
 
         <!-- Contador de Y -->
@@ -130,7 +128,6 @@
             android:max="100"
             android:progress="0"
             style="@android:style/Widget.ProgressBar.Horizontal"
-            android:progressDrawable="@drawable/custom_progress_bar"
             android:minHeight="20dp"/>
 
         <!-- Contador de Z -->
