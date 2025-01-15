@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <!-- Layout principal para los valores X, Y y Z, con margen superior -->
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+    android:gravity="top|center_horizontal">
+
+    <!-- Layout para el valor X -->
+    <LinearLayout
+        android:id="@+id/xLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- TextView para el valor X -->
+        <TextView
+            android:id="@+id/xLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- ProgressBar para el valor X -->
+        <ProgressBar
+            android:id="@+id/xProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:minHeight="20dp"/>
+
+        <!-- Contador de X -->
+        <TextView
+            android:id="@+id/xCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Layout para el valor Y -->
+    <LinearLayout
+        android:id="@+id/yLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- TextView para el valor Y -->
+        <TextView
+            android:id="@+id/yLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- ProgressBar para el valor Y -->
+        <ProgressBar
+            android:id="@+id/yProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:minHeight="20dp"/>
+
+        <!-- Contador de Y -->
+        <TextView
+            android:id="@+id/yCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Layout para el valor Z -->
+    <LinearLayout
+        android:id="@+id/zLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- TextView para el valor Z -->
+        <TextView
+            android:id="@+id/zLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- ProgressBar para el valor Z -->
+        <ProgressBar
+            android:id="@+id/zProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:minHeight="20dp"/>
+
+        <!-- Contador de Z -->
+        <TextView
+            android:id="@+id/zCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
